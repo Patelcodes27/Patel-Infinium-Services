@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Our Services | Patel Infinium Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #990000;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #990000;
+      transform: scale(1.05);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      line-height: 1.7;
+    }
+    h2 {
+      color: #990000;
+      margin-top: 30px;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .service {
+      background-color: #fff;
+      margin: 25px 0;
+      padding: 25px;
+      border-left: 5px solid #990000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    .service:nth-child(odd) { animation-delay: 0.4s; }
+    .service:nth-child(even) { animation-delay: 0.8s; }
+    .highlight {
+      color: #990000;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      animation: fadeIn 2s ease;
+    }
+
+    /* Animations */
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our AI-Powered Services</h1>
+    <p>Innovative Solutions for the Modern World</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="developer.html">Developer</a>
+  </nav>
+  
+  
+  <div class="container">
+
+    <h2>What We Offer</h2>
+
+    <div class="service">
+      <h3>Dynamic Personalization Engine</h3>
+      <p>
+        Our proprietary AI engine tailors user experiences in real-time. Whether it’s adapting your homepage based on user intent or recommending personalized product bundles, our <span class="highlight">Dynamic Personalization Engine</span> ensures every visitor feels like your platform was built just for them.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Predictive Analytics Suite</h3>
+      <p>
+        Make smarter business decisions with our <span class="highlight">Predictive Analytics Suite</span>. Leveraging deep learning and historical data, we forecast trends, customer behavior, and market changes with impressive accuracy. Ideal for eCommerce, logistics, and finance businesses.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Intelligent Lead Qualification</h3>
+      <p>
+        Stop wasting time on cold leads. Our SaaS tool intelligently scores and qualifies leads using behavioral patterns, past interactions, and AI segmentation — so your sales team focuses only on the most promising opportunities.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>AI-Powered Support Automation</h3>
+      <p>
+        Elevate customer service with our AI bots trained on your data. Our <span class="highlight">Support Automation Module</span> handles up to 70% of support tickets — reducing workload and response times while maintaining human-like interaction quality.
+      </p>
+    </div>
+
+    <div class="service">
+      <h3>Custom SaaS Development</h3>
+      <p>
+        Need a tailor-made solution? From scratch to scale, our developers work closely with clients to build <span class="highlight">custom SaaS platforms</span> based on your business requirements. Scalable, secure, and future-ready — that's our promise.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Patel Infinium Services | Empowering Businesses with Ethical AI
+  </footer>
+
+</body>
+</html>

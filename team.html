@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Team | Patel Infinium Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #990000;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      animation: fadeSlide 1s ease;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #990000;
+      transform: scale(1.05);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #990000;
+      margin-top: 40px;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .team-member {
+      display: flex;
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    .team-member:nth-child(odd) { animation-delay: 0.4s; }
+    .team-member:nth-child(even) { animation-delay: 0.8s; }
+    .team-member img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .team-member .info {
+      max-width: 600px;
+    }
+    .team-member h3 {
+      color: #990000;
+      margin: 0;
+    }
+    .team-member p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Meet Our Team</h1>
+    <p>The Brilliant Minds Driving Our Success</p>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="developer.html">Developer</a>
+  </nav>
+  
+  
+
+  <div class="container">
+    <h2>Our Talented Team</h2>
+
+    <div class="team-member">
+      <img src="images/pm.jpg" alt="Prince Patel">
+      <div class="info">
+        <h3>Prince Patel</h3>
+        <p><strong>Founder & CEO</strong><br>
+        A passionate tech entrepreneur, Prince founded Patel Infinium Services with a vision to revolutionize industries with AI. With a deep background in both software development and business strategy, he leads the team with energy and focus.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <img src="images/ar.jpg" alt="Anurag Rathod">
+      <div class="info">
+        <h3>Anurag Rathod</h3>
+        <p><strong>Lead Developer</strong><br>
+        Anurag is our lead developer, an expert in full-stack development with a keen interest in AI-driven applications. His deep understanding of coding practices ensures that our services are both functional and scalable.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <img src="images/op-removebg-preview.png" alt="Om Prajapati">
+      <div class="info">
+        <h3>Om Prajapati</h3>
+        <p><strong>AI Specialist</strong><br>
+        Om brings extensive expertise in machine learning and data science. His role is crucial in developing our AI solutions, ensuring their performance and scalability for real-world applications.</p>
+      </div>
+    </div>
+
+    <div class="team-member">
+      <img src="images/jp-removebg-preview.png" alt="Jeet Pandya">
+      <div class="info">
+        <h3>Jeet Pandya</h3>
+        <p><strong>Project Manager</strong><br>
+        Jeet is the backbone of our project management. He ensures every project is delivered on time and aligns with client expectations. His organizational skills keep everything running smoothly.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Patel Infinium Services | Innovating with AI for a Smarter Tomorrow
+  </footer>
+
+</body>
+</html>

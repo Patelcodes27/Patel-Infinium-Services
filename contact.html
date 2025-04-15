@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Patel Infinium Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #990000;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      animation: fadeSlide 1s ease;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #990000;
+      transform: scale(1.05);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #990000;
+      margin-top: 40px;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .contact-info {
+      margin-bottom: 30px;
+    }
+    .contact-info p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .contact-form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease forwards;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    .contact-form button {
+      background-color: #990000;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .contact-form button:hover {
+      background-color: #cc0000;
+    }
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <p>We'd Love to Hear From You!</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="developer.html">Developer</a>
+  </nav>
+  
+
+  <div class="container">
+    <h2>Get In Touch</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> contact@patelinfinium.com</p>
+      <p><strong>Phone:</strong> +91 123 456 7890</p>
+      <p><strong>Address:</strong> Patel Infinium Services, Main Street, Ahmedabad, India</p>
+    </div>
+
+    <div class="contact-form">
+      <h3>Send Us a Message</h3>
+      <form action="submit_form.php" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Patel Infinium Services | Innovating with AI for a Smarter Tomorrow
+  </footer>
+
+</body>
+</html>

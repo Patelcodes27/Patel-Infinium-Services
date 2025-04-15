@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Features | Patel Infinium Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background-color: #990000;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      animation: fadeSlide 1s ease;
+    }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #990000;
+      transform: scale(1.05);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #990000;
+      margin-top: 40px;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .feature-box {
+      background-color: #fff;
+      padding: 25px;
+      margin: 20px 0;
+      border-left: 5px solid #990000;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+    .feature-box:nth-child(odd) { animation-delay: 0.4s; }
+    .feature-box:nth-child(even) { animation-delay: 0.8s; }
+    .highlight {
+      color: #990000;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Key Features</h1>
+    <p>Cutting-Edge Functionality Built for the Future</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+    <a href="developer.html">Developer</a>
+  </nav>
+  
+  
+  <div class="container">
+    <h2>Explore Our AI SaaS Superpowers</h2>
+
+    <div class="feature-box">
+      <h3>Real-Time Data Processing</h3>
+      <p>
+        Our platform ingests and analyzes vast volumes of data in real-time. Whether it's customer interactions, sensor data, or market updates — our <span class="highlight">real-time engine</span> ensures your decisions are always powered by live insights.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Seamless API Integration</h3>
+      <p>
+        Plug into your existing tech stack without the headache. Our services offer <span class="highlight">RESTful APIs and SDKs</span> for easy integration with CRMs, ERPs, analytics tools, and custom apps — all backed by robust documentation.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Multi-Layered Security</h3>
+      <p>
+        Security isn’t an afterthought — it’s built in. We use <span class="highlight">AES encryption, role-based access control, and continuous monitoring</span> to keep your data safe and compliance-ready (GDPR, HIPAA, etc.).
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Self-Learning Algorithms</h3>
+      <p>
+        The more you use our platform, the smarter it gets. Our AI models adapt to changing behaviors and data patterns using <span class="highlight">reinforcement learning</span> to continuously optimize performance without manual tweaking.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <h3>Custom Dashboards & Reporting</h3>
+      <p>
+        Visualize everything from user journeys to business KPIs with our <span class="highlight">drag-and-drop dashboard builder</span>. Export insights, set alerts, and automate weekly reports — all in one place.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Patel Infinium Services | Built for Innovators, Powered by AI
+  </footer>
+
+</body>
+</html>
